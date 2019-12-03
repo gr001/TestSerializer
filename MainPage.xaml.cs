@@ -56,14 +56,12 @@ namespace TestSerializer
                 }
                 catch(Exception ex)
                 {
-                    int iii = 3;
+                    throw ex;//just rethrow the exception
                 }
                 stream.Seek(0, SeekOrigin.Begin);
                 var bb = stream.ToArray();
                 int ii = 3;
             }
-
-            
         }
     }
 }
